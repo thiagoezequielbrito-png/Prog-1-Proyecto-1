@@ -42,7 +42,7 @@ def precio_promedio_por_operaciones (matriz_valor):
     return precio_promed_operacion
     
 def ordenamiento_desendente_maximo (lista_maximos):
-#Hola    
+#Hola cómo estas   
 """CREAR UNA FUNCIÓN QUE PUEDA, CON LA FUNCIÓN DE MÁXIMO Y MÍNIMO,
 JUNTO A LA LISTA DE ZONAS GEOGRÁFICAS, Y TENER LA DATA DEL TIPO DE OPERACIÓN,
 IMPRIMIR DE MAYOR A MENOR, USANDO FUNCIÓN ZIP, Y SLICING LAS ZONAS CON MAYOR PRECIO
