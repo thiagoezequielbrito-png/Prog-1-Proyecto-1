@@ -41,29 +41,16 @@ def precio_promedio_por_operaciones (matriz_valor):
         promedio = 0
     return precio_promed_operacion
     
+def ordenamiento_desendente_maximo (lista_maximos):
     
-def nuevas_zonas (zona, matriz, matriz_valor, zonas_geograficas):
-    if zona in zonas_geograficas:
-        print ("La zona ingresada ya existe.")
-    else:
-        matriz.append([0]*3)
-        matriz_valor.append([0]*3)
-        zonas_geograficas.append(zona)
-#Con esta función, el programa principal deberá de randomizar nuevamente los valores de matriz, y manualmente, agregar el precio en matriz_valor
+"""CREAR UNA FUNCIÓN QUE PUEDA, CON LA FUNCIÓN DE MÁXIMO Y MÍNIMO,
+JUNTO A LA LISTA DE ZONAS GEOGRÁFICAS, Y TENER LA DATA DEL TIPO DE OPERACIÓN,
+IMPRIMIR DE MAYOR A MENOR, USANDO FUNCIÓN ZIP, Y SLICING LAS ZONAS CON MAYOR PRECIO
+DE FORMA DECENDENTE"""
+
+"""Modificar las funciones de máximo y minimo para hacer un zip de la lista, para combinar el tipo de
+operacion y el maximo"""
+
         
-def nuevas_operaciones (operacion, matriz, matriz_valor, operaciones):
-    if operacion in operaciones:
-        print("La operación ingresada ya existe.")
-    else:
-        for i in range (len(matriz)):
-            matriz[i].append(0)
-            matriz_valor[i].append(o)
-        operaciones.append(operacion)
-#Al igual que la anterior función, se deberá de randomizar nuevamente los valores de la matriz, y manualmente, agregar el precio en matriz_valor
-        
-#FALTA CREAR UNA FUNCIÓN PARA MOSTRAR LOS PRECIOS PROMEDIO DE FORMA DESCENDENTE.
-#PREFERIBLEMENTE USAR SLICING
-        
-#CREAR FUNCIÓN QUE BORRE TODOS LOS DATOS DE LA MATRIZ QUE CONTENGA CANTIDAD,
-#USANDO SLICING, Y VOLVER A CREAR DICHA MATRIZ CON TODOS LOS VALORES EN O
+
        
