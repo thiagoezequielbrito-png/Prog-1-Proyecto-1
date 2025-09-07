@@ -41,15 +41,18 @@ def precio_promedio_por_operaciones (matriz_valor):
         promedio = 0
     return precio_promed_operacion
     
-def ordenamiento_desendente_maximo (lista_maximos):
+def ordenamiento_descendente_maximo (lista_maximos, zonas):
+    cantidad_maxima_por_zona = list(zip(lista_maximos, zonas))
+    cantidad_maxima_por_zona.sort (key = lambda x: x[0])
+    cantidad_maxima_por_zona_desc = cantidad_maxima_por_zona [:: -1]
+    return cantidad_maxima_por_zona_desc
 
-"""CREAR UNA FUNCIÓN QUE PUEDA, CON LA FUNCIÓN DE MÁXIMO Y MÍNIMO,
-JUNTO A LA LISTA DE ZONAS GEOGRÁFICAS, Y TENER LA DATA DEL TIPO DE OPERACIÓN,
-IMPRIMIR DE MAYOR A MENOR, USANDO FUNCIÓN ZIP, Y SLICING LAS ZONAS CON MAYOR PRECIO
-DE FORMA DECENDENTE"""
-
-"""Modificar las funciones de máximo y minimo para hacer un zip de la lista, para combinar el tipo de
-operacion y el maximo"""
+def ordenamiento_descendente_minimo (lista_minimo, zonas):
+    cantidad_minima_por_zona = list(zip(lista_minimo, zonas))
+    cantidad_minima_por_zona.sort (key = lambda x: x[0])
+    cantidad_minima_por_zona_desc = cantidad_minima_por_zona [:: -1]
+    return cantidad_minima_por_zona_desc
+    
 
         
 
