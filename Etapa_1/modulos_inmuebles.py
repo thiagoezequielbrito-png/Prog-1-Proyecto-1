@@ -13,7 +13,7 @@ def operacion_minima_por_zona (matriz):
         operaciones_minimas.append(numero)
     return operaciones_minimas
 
-suma_zonas = lambda matriz: [sum(fila) for fila in matriz]
+suma_zonas = lambda matriz: [sum(fila) for fila in matriz] 
 
 suma_operaciones = lambda matriz: [sum(matriz[fila][columna] for fila in range (len(matriz))) for columna in range (len(matriz[0]))]
 
@@ -49,7 +49,3 @@ def ordenamiento_descendente_minimo (lista_minimo, zonas):
     cantidad_minima_por_zona_desc = cantidad_minima_por_zona [:: -1]
     return cantidad_minima_por_zona_desc
     
-
-        
-
-       
